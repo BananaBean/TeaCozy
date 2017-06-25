@@ -8,30 +8,93 @@ body {
   padding: 0;
 }
 
-.header {
+a {
+  color: seashell;
+}
+
+/*h3,
+h4,
+h5 {
+  padding: 10px;
+}*/
+
+.container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* HEADER SECTION */
+
+header {
   align-items: center;
   position: fixed;
-  padding: 0 10px;
+  z-index: 5;
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
+  background-color: black;
 }
 
-.header nav {
+header nav {
   text-align: right;
   flex-grow: 1;
 }
 
 nav span {
   margin: 10px;
-  /* Locations is too far to the right, but unable to change */
-}
-
-a {
-  color: seashell;
 }
 
 #logo {
   height: 50px;
+  /* Logo is not 10px to the right, but unable to change
+  --If I try to change by adding padding-left to logo, locations shifts to the right. If I add padding to header, locations shifts again to the right.
+  */
 }
+
+/* MAIN SECTION */
+
+.main {
+  position: relative;
+  top: 69px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+
+#mission {
+  height: 700px;
+  width: 1200px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+}
+
+#statement {
+  padding: 30px;
+  margin: 0;
+}
+
+/* Featured Tea Section */
+
+#featuredtea {
+  width: 1000px;
+}
+
+#teas img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+#teas h4 {
+
+}
+
+/* Locations Section */
+
+#locations {
+  height: 500px;
+  width: 1200px;
+}
+
+/* Footer Section */

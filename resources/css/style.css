@@ -1,0 +1,37 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0px;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 0 10px;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+}
+
+.header nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  margin: 10px;
+  /* Locations is too far to the right, but unable to change */
+}
+
+a {
+  color: seashell;
+}
+
+#logo {
+  height: 50px;
+}
